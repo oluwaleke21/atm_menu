@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>atm menu</title>
+</head>
+
+<body>
+
+  <script>
+    // Get User's Intention
+    let menuOption = prompt(`Welcome Tobiloba R. Williams, Kindly Proceed With The Options Below :
+    1. Withdrawal
+    2. Transfer
+    3. Airtime
+    4. Check Balance
+    `)
+
+ 
+    // Perform User's Request
+    if (menuOption == 1) {
+      let withdrawalOption = prompt(`Kindly Select The Amount Below :
+      1. #1000
+      2. #5000
+      3. #10000
+      4. #20000
+      `)
+      // option 1 to 4
+      if (withdrawalOption == "1" || withdrawalOption == "2" || withdrawalOption == "3" || withdrawalOption == "4") {
+        let chooseWithdrawal = prompt(`Kindly Enter Your Pin :`)
+        alert(`Withdrawal Sucessful`)
+      }
+      else {
+        alert(`Kindly Select An Option On The Menu !`)
+      }
+    }
+
+    // Transfer Option
+    else if (menuOption == 2) {
+      let transferOption = prompt(`Kindly Select Bank To Transfer To :
+        1. Transfer To Zenith Bank
+        2.Transfer To Others
+        `)
+      // Option transer to Zenith Bank
+      if (transferOption == 1) {
+        let chooseZenith = prompt(`Kindly Enter Zenith Account Number`)
+        chooseZenith = prompt(`Enter Amount`)
+        chooseZenith = prompt(`Kindly Enter Your Pin`)
+        alert(`Transfer Successful`)
+      } else if (transferOption == 2) {
+        let chooseOthers = prompt(`Kindly Enter Bank Option : 
+          1. Access Bank
+          2. Guaranty Trust Bank
+          3. Sterling Bank
+          4. Diamond Bank
+          5. Kuda Bank
+          `)
+          // option 1 to 4
+      if (chooseOthers == "1" || chooseOthers == "2" || chooseOthers == "3" || chooseOthers == "4" || chooseOthers == "5") {
+        let chooseTransfer = prompt(`Kindly Input Amount To Transfer :`)
+        chooseTransfer = prompt(`Kinly Input Your PIN`)
+        alert(`Transfer Sucessful`)
+      }
+      else {
+        alert(`Kindly Select An Option On The Menu !`)
+      }
+      } 
+    }
+
+    // airtime option
+    else if (menuOption == 3) {
+      let airtimeOption = prompt(`Kindly Select Your Network Below : 
+      1. MTN
+      2. GLO
+      3. AIRTEL
+      4. 9MOBILE
+      `)
+      // option 1 to 4
+      if (airtimeOption == "1" || airtimeOption == "2" || airtimeOption == "3" || airtimeOption == "4") {
+        let chooseNetwork = prompt(`Kindly Enter Your Amount :`)
+        chooseNetwork = prompt(`Kindly Enter Your Pin`)
+        alert(`Airtime Recharge Sucessful`)
+      }
+      else {
+        alert(`Kindly Select An Option On The Menu !`)
+      }
+      } 
+
+      // check balance
+      if (menuOption == 4) {
+        let balanceOption = prompt(`Kinly Enter Your Pin :`)
+        alert(`Your Balance is #33,000`)
+      }
+  </script>
+
+</body>
+
+</html>
